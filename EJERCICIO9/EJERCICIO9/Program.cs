@@ -38,8 +38,8 @@ namespace Ejercicios
                     // Si pot entrar, busquem un lloc per asseure'l.
                     while (!sentado)
                     {
-                        int pos1 = r.Next(0, 8);
-                        int pos2 = r.Next(0, 8);
+                        int pos1 = r.Next(0, palaas.Sala.GetLength(0));
+                        int pos2 = r.Next(0, palaas.Sala.GetLength(1));
                         // Si la cadira està ocupada, li busquem un altre. En cas contrari l'assentem.
                         if (palaas.Sala[pos1, pos2].Ocupado == null)
                         {
@@ -56,6 +56,7 @@ namespace Ejercicios
                 }
             }
             revisor.MostrarEspectadores(publico);
+            palaas.PrintarSala();
 
 
         }
