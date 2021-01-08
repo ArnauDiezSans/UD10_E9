@@ -7,7 +7,8 @@ namespace Ejercicios
         static void Main(string[] args)
         {
             // Generem el cinema amb el seu revisor
-            Cine palaas = new Cine(8, 8);
+            Cine palaas = new Cine(8, 8, 5);
+            
 
             Espectador revisor = new Espectador("Revisor",40,0);
 
@@ -54,6 +55,7 @@ namespace Ejercicios
                     Console.WriteLine("{0} no ha pogut entrar a la pelicula", publico[i].Nombre);
                 }
             }
+            revisor.MostrarEspectadores(publico);
 
 
         }
