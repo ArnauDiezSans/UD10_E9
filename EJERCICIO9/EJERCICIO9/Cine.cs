@@ -14,7 +14,7 @@ namespace Ejercicios
         // GETTERS Y SETTERS
         public double Precio 
         { 
-            get { retunr precio; }
+            get { return precio; }
             set { precio = value; }
         }
         internal Pelicula Reproduccion 
@@ -33,7 +33,7 @@ namespace Ejercicios
         {
             // generamos una sala nueva con sillas. filas y columnas
             int numFila = 0;
-            int lletres = "ABCDEFGHIJKLMNOPQRST";
+            string lletres = "ABCDEFGHIJKLMNOPQRST";
             sala = new Silla[numero,letra]; // creamos la sala
             for (int i = numero - 1; i >= 0; i--) // recorre la fila
             {
@@ -46,24 +46,22 @@ namespace Ejercicios
         }
 
         // METODES
-        private Boolean checkPrecioEdad(Espectador espectador, int precio, Pelicula pelicula) 
+        public Boolean CheckPrecioEdad(Espectador espectador, double precio, Pelicula pelicula) 
         {
             // comprueba que el espectador tenga dinero y edad suficiente para entrar
             int edadEspectador = espectador.Edad;
             double dineroEspectador = espectador.Dinero;
             int edadMinima = pelicula.EdadMinima;
 
-            Boolean permitido = true;
-
             if (edadEspectador >= edadMinima || dineroEspectador < precio)
             {
-                permitido = false;
+                return false;
             }
 
             // restamos el precio de la entrada al dinero del espectador
-            espectador.Dinero = espectador.Dinero - precio
+            espectador.Dinero = espectador.Dinero - precio;
 
-            return permitido;
+            return true;
 
         }
     }
