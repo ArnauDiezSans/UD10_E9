@@ -11,3 +11,9 @@ C:\Users\Joan\source\repos\JoanJuan10\.NET_EJ9\EJERCICIO9\EJERCICIO9\obj\Debug\n
 C:\Users\Joan\source\repos\JoanJuan10\.NET_EJ9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.dll
 C:\Users\Joan\source\repos\JoanJuan10\.NET_EJ9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.pdb
 C:\Users\Joan\source\repos\JoanJuan10\.NET_EJ9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.genruntimeconfig.cache
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.csprojAssemblyReference.cache
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.AssemblyInfoInputs.cache
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.AssemblyInfo.cs
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.csproj.CoreCompileInputs.cache
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.dll
+C:\Users\Arnau\Source\Repos\ArnauDiezSans\UD10_E9\EJERCICIO9\EJERCICIO9\obj\Debug\netcoreapp3.1\EJERCICIO9.pdb
