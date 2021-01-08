@@ -10,7 +10,7 @@ namespace Ejercicios.EJ9
         private Espectador ocupado;
 
         public string Etiqueta { get => etiqueta; set => etiqueta = value; }
-        internal Espectador Ocupado { get => ocupado; set => ocupado = value; }
+        internal Espectador Ocupado { get => ocupado;}
 
         public Silla(string etiqueta)
         {
