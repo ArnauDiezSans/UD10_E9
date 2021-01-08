@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ejercicios.EJ9
+namespace Ejercicios
 {
     class Espectador
     {
