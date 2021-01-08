@@ -6,11 +6,13 @@ namespace Ejercicios
 {
     class Pelicula
     {
+        // ATRIBUTOS
         private string titulo;
         private int duracion;
         private int edadMinima;
         private string director;
 
+        // CONSTRUCTOR
         public Pelicula(string titulo, int duracion, int edadMinima, string director)
         {
             this.titulo = titulo;
@@ -19,11 +21,10 @@ namespace Ejercicios
             this.director = director;
         }
 
+        // GETTERS Y SETTERS
         public string Titulo { get => titulo; set => titulo = value; }
         public int Duracion { get => duracion; set => duracion = value; }
         public int EdadMinima { get => edadMinima; set => edadMinima = value; }
         public string Director { get => director; set => director = value; }
-
-
     }
 }

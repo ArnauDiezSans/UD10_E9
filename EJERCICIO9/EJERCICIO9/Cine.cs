@@ -6,25 +6,41 @@ namespace Ejercicios
 {
     class Cine
     {
+        // ATRIBUTOS
         private Silla[,] sala;
         private Pelicula reproduccion;
         private double precio;
 
-        public double Precio { get => precio; set => precio = value; }
-        internal Pelicula Reproduccion { get => reproduccion; set => reproduccion = value; }
-        internal Silla[,] Sala { get => sala; set => sala = value; }
+        // GETTERS Y SETTERS
+        public double Precio 
+        { 
+            get { retunr precio; }
+            set { precio = value; }
+        }
+        internal Pelicula Reproduccion 
+        { 
+            get { return reproduccion; } 
+            set { reproduccion = value; }
+        }
+        internal Silla[,] Sala
+        { 
+            get { return sala; }
+            set { sala = value; }
+        }
 
-        public Cine(int medida1, int medida2)
+        // CONSTRUCTOR
+        public Cine(int numero, int letra)
         {
-            int numSilla = 0;
+            // generamos una sala nueva con sillas. filas y columnas
+            int numFila = 0;
             int lletres = "ABCDEFGHIJKLMNOPQRST";
-            sala = new Silla[medida1,medida2];
-            for (int i = medida1 - 1; i >= 0; i--)
+            sala = new Silla[numero,letra]; // creamos la sala
+            for (int i = numero - 1; i >= 0; i--) // recorre la fila
             {
-                numSilla++;
-                for (int j = 0; j < medida2; j++)
+                numFila++;
+                for (int j = 0; j < letra; j++) // recorre cada columna de la fila
                 {
-                    this.sala[i,j] = new Silla("" + numSilla + lletres[j]);
+                    this.sala[i,j] = new Silla("" + numFila + lletres[j]);
                 }
             }
         }
