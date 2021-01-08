@@ -22,5 +22,14 @@ namespace Ejercicios.EJ9
         {
             this.ocupado = null;
         }
+
+        public void Asentar(Espectador espectador)
+        {
+            this.ocupado = espectador;
+        }
+        public void Aixecar () 
+        {
+            this.ocupado = null;
+        }
     }
 }
