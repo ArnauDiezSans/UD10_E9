@@ -27,5 +27,27 @@ namespace Ejercicios
                 }
             }
         }
+
+        // METODES
+        private Boolean checkPrecioEdad(Espectador espectador, int precio, Pelicula pelicula) 
+        {
+            // comprueba que el espectador tenga dinero y edad suficiente para entrar
+            int edadEspectador = espectador.Edad;
+            double dineroEspectador = espectador.Dinero;
+            int edadMinima = pelicula.EdadMinima;
+
+            Boolean permitido = true;
+
+            if (edadEspectador >= edadMinima || dineroEspectador < precio)
+            {
+                permitido = false;
+            }
+
+            // restamos el precio de la entrada al dinero del espectador
+            espectador.Dinero = espectador.Dinero - precio
+
+            return permitido;
+
+        }
     }
 }
