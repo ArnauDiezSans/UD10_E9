@@ -16,14 +16,15 @@ namespace Ejercicios.EJ9
 
         public Cine(int medida1, int medida2)
         {
-            int numSilla = 1;
-            int letra = Convert.ToInt32("A");
+            int numSilla = 0;
+            int lletres = "ABCDEFGHIJKLMNOPQRST";
             sala = new Silla[medida1,medida2];
             for (int i = medida1 - 1; i >= 0; i--)
             {
-                for (int j = 0; i < medida2; i++)
+                numSilla++;
+                for (int j = 0; j < medida2; j++)
                 {
-                    this.sala[i,j] = new Silla();
+                    this.sala[i,j] = new Silla("" + numSilla + lletres[j]);
                 }
             }
         }
