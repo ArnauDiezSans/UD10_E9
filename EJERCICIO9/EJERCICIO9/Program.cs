@@ -7,7 +7,8 @@ namespace Ejercicios
         static void Main(string[] args)
         {
             // Generem el cinema amb el seu revisor
-            Cine palaas = new Cine(8, 8);
+            Cine palaas = new Cine(8, 8, 5);
+            
 
             Espectador revisor = new Espectador("Revisor",40,0);
 
@@ -37,8 +38,8 @@ namespace Ejercicios
                     // Si pot entrar, busquem un lloc per asseure'l.
                     while (!sentado)
                     {
-                        int pos1 = r.Next(0, 8);
-                        int pos2 = r.Next(0, 8);
+                        int pos1 = r.Next(0, palaas.Sala.GetLength(0));
+                        int pos2 = r.Next(0, palaas.Sala.GetLength(1));
                         // Si la cadira està ocupada, li busquem un altre. En cas contrari l'assentem.
                         if (palaas.Sala[pos1, pos2].Ocupado == null)
                         {
@@ -54,6 +55,8 @@ namespace Ejercicios
                     Console.WriteLine("{0} no ha pogut entrar a la pelicula", publico[i].Nombre);
                 }
             }
+            revisor.MostrarEspectadores(publico);
+            palaas.PrintarSala();
 
 
         }

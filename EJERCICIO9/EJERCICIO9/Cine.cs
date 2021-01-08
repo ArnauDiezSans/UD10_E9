@@ -29,11 +29,13 @@ namespace Ejercicios
         }
 
         // CONSTRUCTOR
-        public Cine(int numero, int letra)
+        public Cine(int numero, int letra, int precio)
         {
             // generamos una sala nueva con sillas. filas y columnas
             int numFila = 0;
+            
             string lletres = "ABCDEFGHIJKLMNOPQRST";
+            this.Precio = precio;
             sala = new Silla[numero,letra]; // creamos la sala
             for (int i = numero - 1; i >= 0; i--) // recorre la fila
             {
@@ -53,7 +55,7 @@ namespace Ejercicios
             double dineroEspectador = espectador.Dinero;
             int edadMinima = pelicula.EdadMinima;
 
-            if (edadEspectador >= edadMinima || dineroEspectador < precio)
+            if (edadEspectador < edadMinima || dineroEspectador < precio)
             {
                 return false;
             }
@@ -63,6 +65,24 @@ namespace Ejercicios
 
             return true;
 
+        }
+        public void PrintarSala()
+        {
+            for (int i = 0; i<Sala.GetLength(0); i++)
+            {
+                for (int j = 0;j< Sala.GetLength(1); j++)
+                {
+                    if (this.sala[i,j].Ocupado==null)
+                    {
+                        Console.Write(" O ");
+                    }
+                    else
+                    {
+                        Console.Write(" X ");
+                    }
+                }
+                Console.WriteLine();
+            }
         }
     }
 }
